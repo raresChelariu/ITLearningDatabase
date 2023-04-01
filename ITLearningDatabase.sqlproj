@@ -59,9 +59,14 @@
     <Folder Include="dbo\" />
     <Folder Include="dbo\Tables\" />
     <Folder Include="dbo\Sequences\" />
+    <Folder Include="dbo\Stored Procedures\" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\Videos.sql" />
     <Build Include="dbo\Sequences\SEQ_Videos.sql" />
+    <Build Include="dbo\Tables\Users.sql" />
+    <Build Include="dbo\Stored Procedures\VideosInsert.sql" />
+    <Build Include="dbo\Stored Procedures\UsersInsert.sql" />
+    <Build Include="dbo\Sequences\SEQ_Users.sql" />
   </ItemGroup>
 </Project>
