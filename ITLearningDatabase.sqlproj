@@ -60,13 +60,35 @@
     <Folder Include="dbo\Tables\" />
     <Folder Include="dbo\Sequences\" />
     <Folder Include="dbo\Stored Procedures\" />
+    <Folder Include="dbo\User Defined Types\" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\Videos.sql" />
     <Build Include="dbo\Sequences\SEQ_Videos.sql" />
     <Build Include="dbo\Tables\Users.sql" />
-    <Build Include="dbo\Stored Procedures\VideosInsert.sql" />
     <Build Include="dbo\Stored Procedures\UsersInsert.sql" />
     <Build Include="dbo\Sequences\SEQ_Users.sql" />
+    <Build Include="dbo\Tables\UserCourseProgress.sql" />
+    <Build Include="dbo\Tables\Quizzes.sql" />
+    <Build Include="dbo\Tables\QuizChoices.sql" />
+    <Build Include="dbo\Tables\ItemTypes.sql" />
+    <Build Include="dbo\Tables\ItemTitles.sql" />
+    <Build Include="dbo\Tables\CourseWikis.sql" />
+    <Build Include="dbo\Tables\CourseScripts.sql" />
+    <Build Include="dbo\Tables\Courses.sql" />
+    <Build Include="dbo\Stored Procedures\VideoInsert.sql" />
+    <Build Include="dbo\Stored Procedures\UserCourseProgressUpdate.sql" />
+    <Build Include="dbo\Stored Procedures\QuizWithAnswersByItemId.sql" />
+    <Build Include="dbo\Stored Procedures\QuizInsert.sql" />
+    <Build Include="dbo\Stored Procedures\QuizGetByItemID.sql" />
+    <Build Include="dbo\Stored Procedures\CourseWikiInsert.sql" />
+    <Build Include="dbo\Stored Procedures\CoursesInsert.sql" />
+    <Build Include="dbo\Stored Procedures\CourseGetTitlesByCourseID.sql" />
+    <Build Include="dbo\Stored Procedures\CourseGetNextItem.sql" />
+    <Build Include="dbo\Stored Procedures\CourseAppendItem.sql" />
+    <Build Include="dbo\User Defined Types\QuizChoicesList.sql" />
+    <Build Include="dbo\Sequences\SEQ_QuizChoice.sql" />
+    <Build Include="dbo\Sequences\SEQ_Items.sql" />
+    <Build Include="dbo\Sequences\SEQ_Courses.sql" />
   </ItemGroup>
 </Project>
