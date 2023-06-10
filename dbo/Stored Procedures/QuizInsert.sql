@@ -4,7 +4,7 @@ AS BEGIN
     SET @ItemID=NEXT VALUE FOR dbo.SEQ_Items;
     EXEC dbo.CourseAppendItem @CourseID=@CourseID, @ItemID=@ItemID;
     INSERT INTO dbo.ItemTitles(ItemID, ItemTitle, ItemTypeID)
-    VALUES(@ItemID, @QuizTitle, 2);
+    VALUES(@ItemID, @QuizTitle, 1);
     INSERT INTO dbo.Quizzes(ItemID, CourseID, QuestionText)
     VALUES(@ItemID, @CourseID, @QuestionText);
     INSERT INTO dbo.QuizChoices(QuizID, ChoiceText, CorrectChoice)
