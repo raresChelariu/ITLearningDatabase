@@ -1,9 +1,8 @@
 ﻿CREATE TABLE [dbo].[CourseScripts] (
-    [ScriptID]         BIGINT          NOT NULL,
-    [ScriptName]       VARCHAR (128)   NOT NULL,
-    [CourseID]         BIGINT          NOT NULL,
-    [DatabaseSystemID] SMALLINT        NOT NULL,
-    [SeedingScript]    NVARCHAR (2048) NOT NULL,
-    CONSTRAINT [PK_CourseScripts] PRIMARY KEY CLUSTERED ([ScriptID] ASC)
+    [CourseID]   BIGINT         NOT NULL,
+    [ScriptID]   BIGINT         CONSTRAINT [DF_CourseScripts_ScriptID] DEFAULT (NEXT VALUE FOR [dbo].[SEQ_Scripts]) NOT NULL,
+    [ScriptText] NVARCHAR (MAX) NOT NULL
 );
+
+
 

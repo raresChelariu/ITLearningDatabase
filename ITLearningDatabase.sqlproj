@@ -90,5 +90,12 @@
     <Build Include="dbo\Sequences\SEQ_QuizChoice.sql" />
     <Build Include="dbo\Sequences\SEQ_Items.sql" />
     <Build Include="dbo\Sequences\SEQ_Courses.sql" />
+    <Build Include="dbo\Tables\SqlQuizzes.sql" />
+    <Build Include="dbo\Tables\PlaygroundUsers.sql" />
+    <Build Include="dbo\Stored Procedures\SqlQuizInsert.sql" />
+    <Build Include="dbo\Stored Procedures\SqlQuizGetByItemId.sql" />
+    <Build Include="dbo\Stored Procedures\CoursesGetByUserIdWithDatabaseDetails.sql" />
+    <Build Include="dbo\Stored Procedures\CourseScriptInsert.sql" />
+    <Build Include="dbo\Sequences\SEQ_Scripts.sql" />
   </ItemGroup>
 </Project>
